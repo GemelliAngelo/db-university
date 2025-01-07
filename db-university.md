@@ -75,5 +75,14 @@ WHERE `phone` IS NULL;
 
 9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo
    degree_id, inserire un valore casuale)
+
+```sql
+INSERT INTO
+`university`.`students`
+VALUES (
+    '66', 'Angelo', 'Gemelli', '2002-04-27', 'GMLNGL02D27Z368A', '2024-09-11', '666666', 'gemeangelo27@gmail.com'
+    );
+```
+
 10. Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9

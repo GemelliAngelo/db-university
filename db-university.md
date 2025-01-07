@@ -53,13 +53,18 @@ GROUP BY `date`;
 ```sql
 SELECT
 `level`,
-COUNT(`id`)
+COUNT(`id`) AS `id_count`
 FROM university.degrees
 WHERE `level` LIKE "magistrale"
 GROUP BY `level`;
 ```
 
 7. Da quanti dipartimenti è composta l'università? (12)
+
+```sql
+SELECT COUNT(id) AS `departments_count` FROM university.departments;
+```
+
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo
    degree_id, inserire un valore casuale)

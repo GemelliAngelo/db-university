@@ -80,7 +80,7 @@ WHERE `phone` IS NULL;
 INSERT INTO
 `university`.`students`
 VALUES (
-    '66', 'Angelo', 'Gemelli', '2002-04-27', 'GMLNGL02D27Z368A', '2024-09-11', '666666', 'gemeangelo27@gmail.com'
+    "66", "Angelo", "Gemelli", "2002-04-27", "GMLNGL02D27Z368A", "2024-09-11", "666666", "gemeangelo27@gmail.com"
     );
 ```
 
@@ -89,8 +89,15 @@ VALUES (
 ```sql
 UPDATE
 `university`.`teachers`
-SET `office_number` = '126'
-WHERE (`id` = '58');
+SET `office_number` = "126"
+WHERE `name` = "Pietro" AND
+`surname`="Rizzo";
 ```
 
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+
+```sql
+DELETE FROM
+`university`.`students`
+WHERE `fiscal_code` = "GMLNGL02D27Z368A";
+```
